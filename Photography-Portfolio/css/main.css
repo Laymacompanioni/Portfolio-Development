@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+    
+}
+.hero-image{
+    background-image: url("/Projects/Photography-Portfolio/images/rose-land.png");
+    background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1{
+    text-align: center;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+h3{
+    text-align: center;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.header-container{
+    background: black;
+    padding: 20px;
+    box-shadow: 5px 5px 6px #6e6e6e;
+    font-size: 15pt;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.logo-box{
+    background-color: #cccccc77;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 200px;
+        padding: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 13pt;
+    color: white;
+    margin-right: 20px;
+    padding: 2px 7px;
+    text-align: center;
+}
+/* Nature Page */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1px;
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: black;
+    color: #444;
+}
+
+/* make a grid */
+
+.photo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 300px;
+    grid-gap: 1px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.photo-wrapper > * {
+    /* background-color: #444; */
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+
+/** Responsive styles **/
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-wrapper > * {
+        margin-bottom: 10px;
+        height: 300px;
+        width: 300px;
+
+    }
+
+}
